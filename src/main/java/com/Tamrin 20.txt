@@ -1,0 +1,15 @@
+    //---------------------------------------------------------------------------------
+    //Tamrin 20
+
+    public static Book [] bookCategory(Book [] books, String category)
+    {
+        Book [] selectedBooks = new Book[books.length];
+        for (int i = 0; i < books.length; i++)
+        {
+            if (books[i].getCategory().equalsIgnoreCase(category))
+            {
+                selectedBooks [i] = books[i];
+            }
+        }
+        return selectedBooks;
+    }
